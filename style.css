@@ -1,51 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-body{
-    background-color: rgb(253, 251, 251);
-    margin: 0%;
-    font-family: 'Rubik', sans-serif}
-
-header{
-    border: 1px solid black;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-nav ul li{
-    color: rgb(3, 3, 3);
-    font-size: 20px;
-    display: inline;
-    border: 1px solid black;
-    padding: 5px;
-    margin: 20px;
-}
-main ul,ol{
-    border: 1px solid red;
-    display: inline-block;
-    width: 30%;
-}
-img{
-    border-radius: 50%;
-    width: 100px;
-}
-article p{
-    line-height: 26px;
+body {
+  background-color: rgb(253, 251, 251);
+  margin: 0%;
+  font-family: "Rubik", sans-serif;
 }
 
-main{
-    border: 1px solid black;
+header {
+  border: 1px solid black;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.lado-esquerdo{
-    width: 70vw;
-    display: inline-block;
-    margin: 10px;
-    border: 1px solid black;
+nav ul li {
+  color: rgb(3, 3, 3);
+  font-size: 20px;
+  display: inline;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 20px;
+}
+main ul,
+ol {
+  border: 1px solid red;
+  display: inline-block;
+  width: 30%;
+}
+img {
+  border-radius: 50%;
+  width: 100px;
+}
+article p {
+  line-height: 26px;
 }
 
-.lado-direito{
-    width: 220px;
-    float: right;
-    margin: 10px;
-    border: 1px solid black;
+main {
+  border: 1px solid black;
+}
+.lado-esquerdo {
+  width: 70vw;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.lado-direito {
+  width: 220px;
+  float: right;
+  margin: 10px;
+  border: 1px solid black;
 }
