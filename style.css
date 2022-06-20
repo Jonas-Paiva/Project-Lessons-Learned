@@ -12,7 +12,6 @@ body {
 
 header {
   background-color: rgb(253, 251, 251);
-  border: 1px solid black;
   text-align: center;
   position: fixed;
   top: 0;
@@ -46,34 +45,31 @@ main {
   border: 1px solid black;
 }
 .welcome {
+  text-align: center;
+  justify-content: baseline;
   border: 1px solid black;
+  height: 500px;
+  width: 100%;
 }
 .welcome p {
-  float: right;
-  font-size: 6rem;
-  margin-right: 4rem;
+    top: -70px;
+  position: relative;
+  display: inline-block;
+  font-size: 8rem;
   animation: welcome 1s alternate infinite ease-in-out;
 }
 @keyframes welcome {
   0% {
-    color: rgb(0, 255, 213);
+    color: rgb(31, 236, 133);
   }
   100% {
-    color: rgb(0, 17, 255) (255, 0, 0);
+    color: rgb(55, 0, 255);
   }
 }
 img {
-  border: 6px rgb(0, 0, 0);
-  border-style: double;
-  margin-left: 8rem;
+  width: 24rem;
   border-radius: 50%;
-  width: 20rem;
-}
-
-
-.licoes_aprendidas, .licoes_a_aprender{
-  border: 1px solid red;
-  display: inline-block;
+  border: 5px solid black;
 }
 
 article p {
