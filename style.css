@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(253, 251, 251);
   margin: 0%;
@@ -7,19 +11,45 @@ body {
 }
 
 header {
+  background-color: rgb(253, 251, 251);
   border: 1px solid black;
   text-align: center;
   position: fixed;
   top: 0;
   width: 100%;
 }
+#titulo a {
+  color: rgb(0, 136, 18);
+}
+#titulo a:hover{
+    transition: 100ms;
+    color: rgb(2, 172, 24);
+    
+}
+
 nav ul li {
-  color: rgb(3, 3, 3);
   font-size: 20px;
   display: inline;
-  border: 1px solid black;
   padding: 5px;
   margin: 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  transition: 100ms;
+  color: rgb(0, 136, 18);
+}
+
+main {
+  margin-top: 130px;
+  border: 1px solid black;
+}
+img {
+  margin: 5px 50px;
+  border-radius: 50%;
+  width: 300px;
 }
 main ul,
 ol {
@@ -27,17 +57,11 @@ ol {
   display: inline-block;
   width: 30%;
 }
-img {
-  border-radius: 50%;
-  width: 100px;
-}
+
 article p {
   line-height: 26px;
 }
 
-main {
-  border: 1px solid black;
-}
 .lado-esquerdo {
   width: 70vw;
   display: inline-block;
