@@ -13,6 +13,8 @@ header{
     width: 100%;
 }
 nav ul li{
+    color: rgb(3, 3, 3);
+    font-size: 20px;
     display: inline;
     border: 1px solid black;
     padding: 5px;
@@ -21,4 +23,7 @@ nav ul li{
 img{
     border-radius: 50%;
     width: 100px;
+}
+article p{
+    line-height: 26px;
 }
