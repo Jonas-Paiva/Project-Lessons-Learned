@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,14 +21,13 @@ header {
 #titulo a {
   color: rgb(0, 136, 18);
 }
-#titulo a:hover{
-    transition: 100ms;
-    color: rgb(2, 172, 24);
-    
+#titulo a:hover {
+  transition: 100ms;
+  color: rgb(2, 172, 24);
 }
 
 nav ul li {
-  font-size: 20px;
+  font-size: 24px;
   display: inline;
   padding: 5px;
   margin: 20px;
@@ -46,16 +45,35 @@ main {
   margin-top: 130px;
   border: 1px solid black;
 }
-img {
-  margin: 5px 50px;
-  border-radius: 50%;
-  width: 300px;
+.welcome {
+  border: 1px solid black;
 }
-main ul,
-ol {
+.welcome p {
+  float: right;
+  font-size: 6rem;
+  margin-right: 4rem;
+  animation: welcome 1s alternate infinite ease-in-out;
+}
+@keyframes welcome {
+  0% {
+    color: rgb(0, 255, 213);
+  }
+  100% {
+    color: rgb(0, 17, 255) (255, 0, 0);
+  }
+}
+img {
+  border: 6px rgb(0, 0, 0);
+  border-style: double;
+  margin-left: 8rem;
+  border-radius: 50%;
+  width: 20rem;
+}
+
+
+.licoes_aprendidas, .licoes_a_aprender{
   border: 1px solid red;
   display: inline-block;
-  width: 30%;
 }
 
 article p {
