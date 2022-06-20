@@ -20,10 +20,32 @@ nav ul li{
     padding: 5px;
     margin: 20px;
 }
+main ul,ol{
+    border: 1px solid red;
+    display: inline-block;
+    width: 30%;
+}
 img{
     border-radius: 50%;
     width: 100px;
 }
 article p{
     line-height: 26px;
+}
+
+main{
+    border: 1px solid black;
+}
+.lado-esquerdo{
+    width: 70vw;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.lado-direito{
+    width: 220px;
+    float: right;
+    margin: 10px;
+    border: 1px solid black;
 }
