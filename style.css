@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 body{
     background-color: rgb(253, 251, 251);
-}
+    margin: 0%;
+    font-family: 'Rubik', sans-serif}
 
 header{
+    border: 1px solid black;
+    text-align: center;
     position: fixed;
     top: 0;
+    width: 100%;
+}
+nav ul li{
+    display: inline;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 20px;
 }
 img{
     border-radius: 50%;
