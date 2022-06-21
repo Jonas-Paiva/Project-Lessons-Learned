@@ -89,7 +89,7 @@ nav ul {
   top: -70px;
   position: relative;
   display: inline-block;
-  font-size: 8rem;
+  font-size: 10vw;
   animation: welcome 2s alternate infinite ease-in-out;
 }
 @keyframes welcome {
@@ -101,26 +101,29 @@ nav ul {
   }
 }
 #welcome img {
-  width: 24rem;
-  border: 5px;
-  animation: perfil 5s infinite ease;
+  width: 28vw;
+  animation: perfil 3s infinite linear;
   box-shadow: 1px 1px 5px rgb(58, 58, 58);
 }
 
 @keyframes perfil {
   0% {
-    border-radius: 50% 50% 50% 50%;
+    border-radius: 45% 50% 50% 50%;
   }
-  33% {
-    border-radius: 10% 50% 10% 50%;
+  25% {
+    border-radius: 50% 45% 50% 50%;
   }
-  77% {
-    border-radius: 50% 10% 50% 10%;
+  50% {
+    border-radius: 50% 50% 45% 50%;
   }
-  100% {
-    border-radius: 50% 50% 50% 50%;
+  75%{
+    border-radius: 50% 50% 50% 45%;
   }
-}
+  100%{
+      border-radius: 45% 50% 50% 50%;
+    }
+ }
+
 
 /* Artigos e aside */
 article p {
@@ -143,7 +146,8 @@ article p {
   left: 17.1%;
   top: -40%;
   z-index: 2;
-  animation: slide-in-bottom 3s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 3s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
 }
 @keyframes slide-in-bottom {
   0% {
@@ -207,16 +211,14 @@ article p {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.514);
 }
 #licoes_aprendidas:hover {
-  animation: card 1s infinite alternate ease-in-out;
+  transition: 200ms ease-in;
+  transform: translateY(-20px); background-color: rgba(0, 153, 82, 0.89)
+
 }
 #licoes_a_aprender:hover {
-  animation: card 1s infinite alternate ease-in-out;
-}
+  transition: 200ms ease-in;
+  transform: translateY(-20px); background-color: rgba(0, 153, 82, 0.89)
 
-@keyframes card {
-  100% {
-    transform: translateY(-20px);
-  }
 }
 /* tabelas */
 #tabelas {
@@ -240,7 +242,7 @@ table td {
   background-color: rgb(143, 253, 176);
   padding: 5px;
 }
-table td:hover{
+table td:hover {
   background-color: rgb(5, 216, 68);
 }
 /* rodape */
@@ -263,9 +265,9 @@ footer img:hover {
     transform: rotateZ(30deg);
   }
   80% {
-    transform: rotateZ(360deg); 
+    transform: rotateZ(360deg);
   }
-  100%{
+  100% {
     transform: scale(1.1);
   }
 }
