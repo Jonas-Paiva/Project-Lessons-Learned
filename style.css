@@ -3,6 +3,7 @@
 /* Global */
 * {
   margin: 0%;
+  padding: 0%;
 }
 
 html {
@@ -40,25 +41,27 @@ li {
 }
 
 /* Cabeçalho */
-#titulo {
+#titulo2 {
   text-align: center;
   font-size: 2.4rem;
   margin-top: 1.3rem;
   margin-bottom: 1.1rem;
 }
-#titulo a {
+#titulo2 a {
   color: rgb(0, 136, 18);
 }
-#titulo a:hover {
+#titulo2 a:hover {
   transition: 100ms;
-  color: rgb(2, 172, 24);
+  color: rgb(2, 196, 28);
 }
 #cabecalho {
-  position: static;
+  width: 100%;
+  position: fixed;
   top: 0;
+  color: rgb(253, 251, 251);
 }
 nav {
-  box-shadow: 0px 2px 5px #1818183d;
+  box-shadow: 0px 4px 5px #1818183d;
   background-color: rgb(253, 251, 251);
   position: sticky;
   top: 1px;
@@ -123,20 +126,27 @@ nav ul {
 article p {
   line-height: 26px;
 }
+article img{
+  width:200px;
+  position: relative;
+  left: 37%;
+  top: 120px;
+}
 
 .lado-esquerdo {
   font-size: 1.3rem;
   width: 60vw;
+  height: 80vh;
   display: inline-block;
   margin-left: 50px;
-  padding: 160px 15px 15px 5px;
+  padding: 100px 15px 15px 5px;
 }
 
 .lado-direito {
   margin-right: 50px;
   float: right;
   font-size: 1.1rem;
-  padding: 160px 15px 15px 5px;
+  padding: 100px 15px 15px 5px;
   width: 40vh;
   float: right;
 }
@@ -147,7 +157,7 @@ article p {
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 60px;
 }
 #listas {
@@ -164,19 +174,20 @@ article p {
   padding: 20px 20px;
   display: inline-block;
   border-radius: 5px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.514);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.514); 
+}
+#licoes_aprendidas:hover{
+  animation: card 500ms infinite alternate ease-in-out;
+}
+#licoes_a_aprender:hover{
+  animation: card 500ms infinite alternate ease-in-out; 
 }
 
-#licoes_aprendidas:hover {
-  transform: translateY(-15px);
-  transition: 200ms ease-in;
+@keyframes card {
+  100%{
+    transform: translateY(-15px);
+  }
 }
-
-#licoes_a_aprender:hover {
-  transform: translateY(-15px);
-  transition: 200ms ease-in;
-}
-
 /* tabelas */
 #tabelas {
   height: 800px;
