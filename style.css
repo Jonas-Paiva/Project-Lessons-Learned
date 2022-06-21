@@ -44,6 +44,7 @@ a:hover {
   color: rgb(0, 136, 18);
 }
 h2 {
+  color: rgb(0, 136, 18);
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -58,18 +59,19 @@ li {
 }
 /* Banner */
 
-.welcome {
+#welcome {
+  padding-top: 180px;
   text-align: center;
   justify-content: baseline;
   height: 500px;
   width: 100%;
 }
-.welcome p {
+#welcome p {
   top: -70px;
   position: relative;
   display: inline-block;
   font-size: 8rem;
-  animation: welcome 1s alternate infinite ease-in-out;
+  animation: welcome 2s alternate infinite ease-in-out;
 }
 @keyframes welcome {
   0% {
@@ -79,11 +81,21 @@ li {
     color: rgb(1, 128, 29);
   }
 }
-.welcome img {
+#welcome img {
   width: 24rem;
-  border-radius: 50%;
-  border: 5px solid rgb(0, 48, 10);
+  border: 5px;
+  animation: perfil 5s infinite ease;
+  box-shadow: 1px 1px 5px rgb(58, 58, 58);
 }
+
+@keyframes perfil {
+  0%{border-radius: 50% 50% 50% 50% ;}
+  33%{border-radius: 10% 50% 10% 50% ;}
+  77%{border-radius: 50% 10% 50% 10% ;}
+  100%{border-radius: 50% 50% 50% 50% ;}
+}
+
+
 
 /* Artigos e aside */
 article p {
@@ -92,21 +104,19 @@ article p {
 
 .lado-esquerdo {
   font-size: 1.3rem;
-  padding: 15px;
   width: 70vw;
   display: inline-block;
   margin-left: 15px;
-
+  padding: 160px 15px 15px 5px;
 }
 
 .lado-direito {
   margin-right: 25px;
   float: right;
   font-size: 1.1rem;
-  padding: 15px;
+  padding: 160px 15px 15px 5px;
   width: 40vh;
   float: right;
-
 }
 
 /* Skills  */
@@ -115,7 +125,7 @@ article p {
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
-  margin-top: 150px;
+  padding-top: 150px;
 }
 #listas {
   width: 100%;
@@ -142,6 +152,9 @@ article p {
 }
 
 /* tabelas */
+#tabelas {
+  height: 800px;
+}
 
 table {
   display: flex;
@@ -162,10 +175,25 @@ table td {
 }
 /* rodape */
 footer {
+  padding: 10px;
+  height: 130px;
   text-align: center;
-  border: 1px solid black;
+  box-shadow: 1px 1px 5px #1818187e;
 }
 footer img {
   margin-right: 13px;
   width: 80px;
+}
+
+footer img:hover {
+  animation: icon 500ms forwards ease-in-out;
+}
+@keyframes icon {
+  50% {
+    transform: rotateZ(30deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+    transform: scale(1.1);
+  }
 }
