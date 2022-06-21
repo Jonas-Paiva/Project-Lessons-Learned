@@ -49,6 +49,7 @@ li {
 }
 #titulo2 a {
   color: rgb(0, 136, 18);
+  
 }
 #titulo2 a:hover {
   transition: 100ms;
