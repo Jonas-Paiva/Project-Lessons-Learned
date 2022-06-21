@@ -77,7 +77,6 @@ nav ul {
 }
 
 /* Banner */
-
 #welcome {
   padding-top: 70px;
   text-align: center;
@@ -116,14 +115,13 @@ nav ul {
   50% {
     border-radius: 50% 50% 45% 50%;
   }
-  75%{
+  75% {
     border-radius: 50% 50% 50% 45%;
   }
-  100%{
-      border-radius: 45% 50% 50% 50%;
-    }
- }
-
+  100% {
+    border-radius: 45% 50% 50% 50%;
+  }
+}
 
 /* Artigos e aside */
 article p {
@@ -212,14 +210,15 @@ article p {
 }
 #licoes_aprendidas:hover {
   transition: 200ms ease-in;
-  transform: translateY(-20px); background-color: rgba(0, 153, 82, 0.89)
-
+  transform: translateY(-20px);
+  background-color: rgba(0, 153, 82, 0.89);
 }
 #licoes_a_aprender:hover {
   transition: 200ms ease-in;
-  transform: translateY(-20px); background-color: rgba(0, 153, 82, 0.89)
-
+  transform: translateY(-20px);
+  background-color: rgba(0, 153, 82, 0.89);
 }
+
 /* tabelas */
 #tabelas {
   height: 800px;
