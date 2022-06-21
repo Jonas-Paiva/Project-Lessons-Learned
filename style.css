@@ -64,7 +64,7 @@ nav {
   box-shadow: 0px 4px 5px #1818183d;
   background-color: rgb(253, 251, 251);
   position: sticky;
-  top: 1px;
+  top: 0px;
   width: 100%;
   z-index: 99;
 }
@@ -126,28 +126,58 @@ nav ul {
 article p {
   line-height: 26px;
 }
-article img{
-  width:200px;
+.dev-animation {
+  height: 300px;
+  width: 100%;
+}
+#develop {
+  width: 200px;
   position: relative;
-  left: 37%;
-  top: 120px;
+  top: 30%;
+  left: 36%;
+  z-index: 3;
+}
+#luz {
+  width: 100px;
+  position: relative;
+  left: 17.1%;
+  top: -40%;
+  z-index: 2;
+  animation: slide-in-bottom 3s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .lado-esquerdo {
   font-size: 1.3rem;
   width: 60vw;
-  height: 80vh;
   display: inline-block;
   margin-left: 50px;
-  padding: 100px 15px 15px 5px;
+  padding: 70px 15px 15px 5px;
 }
 
 .lado-direito {
   margin-right: 50px;
   float: right;
   font-size: 1.1rem;
-  padding: 100px 15px 15px 5px;
-  width: 40vh;
+  padding: 70px 15px 15px 5px;
+  width: 25vw;
   float: right;
 }
 
@@ -174,18 +204,18 @@ article img{
   padding: 20px 20px;
   display: inline-block;
   border-radius: 5px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.514); 
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.514);
 }
-#licoes_aprendidas:hover{
-  animation: card 500ms infinite alternate ease-in-out;
+#licoes_aprendidas:hover {
+  animation: card 1s infinite alternate ease-in-out;
 }
-#licoes_a_aprender:hover{
-  animation: card 500ms infinite alternate ease-in-out; 
+#licoes_a_aprender:hover {
+  animation: card 1s infinite alternate ease-in-out;
 }
 
 @keyframes card {
-  100%{
-    transform: translateY(-15px);
+  100% {
+    transform: translateY(-20px);
   }
 }
 /* tabelas */
@@ -210,27 +240,32 @@ table td {
   background-color: rgb(143, 253, 176);
   padding: 5px;
 }
+table td:hover{
+  background-color: rgb(5, 216, 68);
+}
 /* rodape */
 footer {
   padding: 10px;
-  height: 130px;
+  height: 100px;
   text-align: center;
   box-shadow: 1px -2px 5px #1818187e;
 }
 footer img {
   margin: 8px;
-  width: 80px;
+  width: 60px;
 }
 
 footer img:hover {
-  animation: icon 500ms forwards ease-in-out;
+  animation: icon 700ms forwards ease-in-out;
 }
 @keyframes icon {
-  50% {
+  10% {
     transform: rotateZ(30deg);
   }
-  100% {
-    transform: rotateZ(360deg);
+  80% {
+    transform: rotateZ(360deg); 
+  }
+  100%{
     transform: scale(1.1);
   }
 }
