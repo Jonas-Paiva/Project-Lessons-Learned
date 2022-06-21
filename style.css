@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
+/* Global */
 html {
   scroll-behavior: smooth;
 }
@@ -10,7 +11,9 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+/* Cabeçalho */
 header {
+  box-shadow: 1px 1px 5px #1818187e;
   background-color: rgb(253, 251, 251);
   text-align: center;
   position: fixed;
@@ -40,19 +43,17 @@ a:hover {
   color: rgb(0, 136, 18);
 }
 
-main {
-  margin-top: 130px;
-  border: 1px solid black;
-}
+/* Banner */
 .welcome {
+  margin-top: 150px;
   text-align: center;
   justify-content: baseline;
-  border: 1px solid black;
   height: 500px;
   width: 100%;
 }
 .welcome p {
-    top: -70px;
+  z-index: -10;
+  top: -70px;
   position: relative;
   display: inline-block;
   font-size: 8rem;
@@ -63,29 +64,99 @@ main {
     color: rgb(31, 236, 133);
   }
   100% {
-    color: rgb(55, 0, 255);
+    color: rgb(1, 128, 29);
   }
 }
-img {
+.welcome img {
   width: 24rem;
   border-radius: 50%;
-  border: 5px solid black;
+  border: 5px solid rgb(0, 48, 10);
 }
 
+/* Artigos e aside */
 article p {
   line-height: 26px;
 }
 
 .lado-esquerdo {
+  font-size: 1.3rem;
+  padding: 15px;
   width: 70vw;
   display: inline-block;
   margin: 10px;
-  border: 1px solid black;
 }
 
 .lado-direito {
-  width: 220px;
+  padding: 15px;
+  width: 40vh;
+  margin-right: 1rem;
   float: right;
   margin: 10px;
+}
+
+
+
+/* Skills  */
+#listas h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+}
+#listas {
+  width: 100%;
+}
+#listas li {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+#licoes_aprendidas,
+#licoes_a_aprender {
+  width: 15rem;
+  margin-left: 17rem;
+  padding: 20px 20px;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.514);
+}
+
+#licoes_aprendidas:hover {
+  transform: translateY(-15px);
+  transition: 200ms;
+}
+#licoes_a_aprender:hover {
+  transform: translateY(-15px);
+  transition: 200ms ease-in;
+}
+
+
+
+
+
+/* tabelas */
+
+.tabelas h2{
+    text-align: center;
+}
+table{
+    font-size: 2rem;
+  width: 100%;
   border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+/* rodape */
+footer {
+  text-align: center;
+  border: 1px solid black;
+}
+footer img {
+  margin-right: 13px;
+  width: 80px;
 }

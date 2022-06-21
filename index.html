@@ -19,10 +19,10 @@
 
       <nav>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="#listas">Listas</a></li>
-          <li><a href="">Aprendizado na Trybe</a></li>
-          <li><a href="">Tabela</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#listas">Skills</a></li>
+          <li><a href="#Aprendizado">Aprendizado na Trybe</a></li>
+          <li><a href="#tabela">Tabela</a></li>
           <li><a href="#rodape">Contatos</a></li>
         </ul>
       </nav>
@@ -31,12 +31,37 @@
     <main>
       <section class="welcome">
         <img id="minha_foto" src="./assets/foto.jpg" alt="foto" />
-        <p>Olá, Mundo !<br> Sou Jonas</p>
+        <p>
+          Olá, Mundo !<br />
+          Sou Jonas
+        </p>
       </section>
 
-      <section class="listas">
+      <article class="lado-esquerdo">
+        <h2>Meu aprendizado na Trybe</h2>
+        <p>
+          A Trybe tem mudado a minha vida, tem me me direcionado no meu
+          aprendizado e na minha carreira como Desenvolvedor como nunca
+          imaginei. Gosto muito do modelo de ensino que nos coloca na prática de
+          verdade, sempre nos mostrando como é o mundo real do desenvolvimento.
+          Amei a Trybe desdo do primeiro dia :)<br />
+          #VQV !!!
+        </p>
+      </article>
+
+      <aside class="lado-direito">
+        <h2>Sobre Mim</h2>
+        <p>
+          Tenho 23 anos e sou estudante na area de desenvolvimento web, também
+          sou músico, mais precisamente guitarrista. No meu tempo livre gosto de
+          ver anime ou um algum filme do Universo Marvel.
+        </p>
+      </aside>
+
+      <section id="listas">
+        <h2>Skills</h2>
         <ol id="licoes_aprendidas">
-          <h2>Lições Aprendidas</h2>
+          <h3>Lições Aprendidas</h3>
           <li>Unix</li>
           <li>Bash</li>
           <li>Html 5</li>
@@ -50,7 +75,7 @@
         </ol>
 
         <ul id="licoes_a_aprender">
-          <h2>Lições a Aprender</h2>
+          <h3>Lições a Aprender</h3>
           <li>JavaScript</li>
           <li>Dom</li>
           <li>Forms</li>
@@ -64,54 +89,55 @@
         </ul>
       </section>
 
-      <article class="lado-esquerdo">
-        <h2>Meu aprendizado na Trybe</h2>
-        <p>
-          A Trybe tem mudado a minha vida, tem me me direcionado no meu
-          aprendizado e na minha carreira como Desenvolvedor como nunca
-          imaginei. O modelo de ensino que nos coloca na prática de verdade
-          todos os dias, sempre nos mostrando como é o mundo real do
-          desenvolvimento. Amei a Trybe desdo do primeiro dia, #VQV !!!
-        </p>
-      </article>
+      <section class="tabelas">
+        <h2>Linguagem Mais Usadas</h2>
 
-      <aside class="lado-direito">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-          quod, ratione nemo cupiditate facilis temporibus in laudantium.
-        </p>
-      </aside>
-
-      <table>
-        <!--<th> Cabeçalho da tabela (Negrito) </th>
-                  <td> Células da Tabela (Y) </td>
-                  <tr> Linhas da tabela (X) </tr> -->
-        <tr>
-          <th>Linguagem</th>
-          <th>Tipagem</th>
-          <th>Paradigma</th>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>Dinâmica</td>
-          <td>POO</td>
-        </tr>
-        <tr>
-          <td>Python</td>
-          <td>14</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>C++</td>
-          <td>14</td>
-          <td>10</td>
-        </tr>
-      </table>
+        <table>
+          <!--<th> Cabeçalho da tabela (Negrito) </th>
+                      <td> Células da Tabela (Y) </td>
+                      <tr> Linhas da tabela (X) </tr> -->
+          <tr>
+            <th>Linguagem</th>
+            <th>Tipagem</th>
+            <th>Paradigma</th>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Dinâmica</td>
+            <td>POO</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+        </table>
+      </section>
     </main>
+
     <footer id="rodape">
-      <p>
-        Meu <a target="_blank" href="https://github.com/Jonas-Paiva">Github</a>
-      </p>
+      <h2>Contatos</h2>
+      <a target="_blank" href="https://github.com/Jonas-Paiva"
+        ><img src="./assets/github-icon.png" alt="Meu Github"
+      /></a>
+
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/jonas-paiva-6537861a3/"
+        ><img src="./assets/linkdin.png" alt="Meu Linkdin"
+      /></a>
+
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/jonas-paiva-6537861a3/"
+        ><img src="./assets/instagram.png" alt="Meu instagram"
+      /></a>
+      <p>Site criado por Jonas Paiva | 2022 ©</p>
     </footer>
   </body>
 </html>
