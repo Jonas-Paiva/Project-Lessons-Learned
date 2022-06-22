@@ -49,7 +49,6 @@ li {
 }
 #titulo2 a {
   color: rgb(0, 136, 18);
-  
 }
 #titulo2 a:hover {
   transition: 100ms;
@@ -100,27 +99,35 @@ nav ul {
     color: rgb(1, 128, 29);
   }
 }
-#welcome img {
-  width: 28vw;
-  animation: perfil 3s infinite linear;
-  box-shadow: 1px 1px 5px rgb(58, 58, 58);
+
+#minha_foto {
+  margin: 0;
+  border: 1vh solid rgba(44, 251, 220, 0.479);
+  border-radius: 2vh;
+  width: 29vw;
+  animation: border-rotate 4s infinite ease-in-out;
 }
 
-@keyframes perfil {
+@keyframes border-rotate {
   0% {
-    border-radius: 45% 50% 50% 50%;
+    box-shadow: rgb(31, 236, 133) 1vh 1vh;
+    border-radius: 50%;
   }
   25% {
-    border-radius: 50% 45% 50% 50%;
+    box-shadow: rgb(31, 236, 133) -1vh 1vh;
+    border-radius: 50%;
   }
   50% {
-    border-radius: 50% 50% 45% 50%;
+    box-shadow: rgb(31, 236, 133) -1vh -1vh;
+    border-radius: 50%;
   }
   75% {
-    border-radius: 50% 50% 50% 45%;
+    box-shadow: rgb(31, 236, 133) 1vh -1vh;
+    border-radius: 50%;
   }
   100% {
-    border-radius: 45% 50% 50% 50%;
+    box-shadow: rgb(31, 236, 133) 1vh 1vh;
+    border-radius: 50%;
   }
 }
 
