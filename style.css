@@ -102,7 +102,7 @@ nav ul {
 
 #minha_foto {
   margin: 0;
-  border: 1vh solid rgba(44, 251, 220, 0.479);
+  border: 1vh solid rgba(31, 236, 133, 0.896);
   border-radius: 2vh;
   width: 29vw;
   animation: border-rotate 5s infinite linear;
@@ -110,24 +110,24 @@ nav ul {
 
 @keyframes border-rotate {
   0% {
-    box-shadow: rgb(31, 236, 133) 1vh 1vh;
-    border-radius: 10% 50% 10% 50%;
+    box-shadow: rgba(31, 236, 133, 0.896) 1vh 1vh;
+    border-radius: 50%;
   }
   25% {
-    box-shadow: rgb(31, 236, 133) -1vh 1vh;
-    border-radius: 50% 10% 50% 10%;
+    box-shadow: rgba(31, 236, 133, 0.896) -1vh 1vh;
+    border-radius: 50%;
   }
   50% {
-    box-shadow: rgb(31, 236, 133) -1vh -1vh;
+    box-shadow: rgba(31, 236, 133, 0.896) -1vh -1vh;
     border-radius: 50%;
   }
   75% {
-    box-shadow: rgb(31, 236, 133) 1vh -1vh;
+    box-shadow: rgba(31, 236, 133, 0.896) 1vh -1vh;
     border-radius: 50% 
   }
   100% {
-    box-shadow: rgb(31, 236, 133) 1vh 1vh;
-    border-radius: 10% 50% 10% 50%;  }
+    box-shadow: rgba(31, 236, 133, 0.896) 1vh 1vh;
+    border-radius: 50% }
 }
 
 /* Artigos e aside */
