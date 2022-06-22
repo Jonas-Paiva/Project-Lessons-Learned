@@ -105,7 +105,7 @@ nav ul {
   border: 1vh solid rgba(44, 251, 220, 0.479);
   border-radius: 2vh;
   width: 29vw;
-  animation: border-rotate 4s infinite linear;
+  animation: border-rotate 5s infinite linear;
 }
 
 @keyframes border-rotate {
